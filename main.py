@@ -9,7 +9,7 @@ def load_vgg(sess, vgg_path):
     Load Pretrained VGG Model into TensorFlow.
     :param sess: TensorFlow Session
     :param vgg_path: Path to vgg folder, containing "variables/" and "saved_model.pb"
-    :return: Tuple of Tensors from VGG model (image_input, keep_prob, layer3_out, layer4_out, layer3_out)
+    :return: Tuple of Tensors from VGG model (image_input, keep_prob, layer3_out, layer4_out, layer7_out)
     """
     # TODO: Implement function
     tf.saved_model.loader.load(sess, ['vgg16'], vgg_path)
